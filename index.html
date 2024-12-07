@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Dia da semana</h1>
+        <input type="number" id="numeroSemana">
+        <button onclick="verificarNumero()">Verificar dia da semana</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function verificarNumero() {
+            var numeroSemana = parseInt(document.getElementById('numeroSemana').value)
+            switch(numeroSemana) {
+                case 1:
+                    document.getElementById('resultado').innerText = "Hoje é domingo";
+                    break;
+                case 2:
+                    document.getElementById('resultado').innerText = "Hoje é segunda-feira";
+                    break;
+                case 3:
+                    document.getElementById('resultado').innerText = "Hoje é terça-feira";
+                    break;
+                case 4:
+                    document.getElementById('resultado').innerText = "Hoje é quarta-feira";    
+                    break;
+                case 5:
+                    document.getElementById('resultado').innerText = "Hoje é quinta-feira";
+                    break;
+                case 6:
+                    document.getElementById('resultado').innerText = "Hoje é sexta-feira";
+                    break;
+                case 7:
+                    document.getElementById('resultado').innerText = "Hoje é sábado";
+                    break;
+                    default:
+                        document.getElementById('resultado').innerText = "Informe um valor válido (de 1 à 7)"
+            }
+        }
+    </script>
+</body>
+
+</html>
